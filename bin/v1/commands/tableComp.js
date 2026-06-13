@@ -6,7 +6,7 @@ import { announce } from "./TableComp/steps/announce.js";
 
 import checks from "./TableComp/steps/checks.js";
 
-import alterJson from "./WithHeader/steps/AlterJson/index.js";
+import alterJson from "./TableComp/steps/AlterJson/index.js";
 
 export default ({
     toPath = process.cwd(),

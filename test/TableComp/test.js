@@ -13,6 +13,6 @@ const showLog = process.argv[4];
 startFunc({
     toPath: path.join(process.cwd(), folderName),
     tableName,
-    configPath: path.join(process.cwd(), "Config"),
+    configPath: path.join(process.cwd(), "Config", "Schemas"),
     showLog
 }).then();
