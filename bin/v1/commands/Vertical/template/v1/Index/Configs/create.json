@@ -1,0 +1,101 @@
+{
+    "containerId": "kSTableContainer",
+    "tableName": "Ledgers",
+    "mode": "create",
+    "layout": {
+        "verticalPosition": "top",
+        "type": "table"
+    },
+    "endPoints": {
+        "create": "/Api/V4/BillsTable/Insert",
+        "update": "",
+        "delete": "",
+        "read": "",
+        "find": "/Api/V4/BillsTable/Find",
+        "filter": "",
+        "dataLists": {},
+        "dataListEndpoints": {
+            "ledgers": "/Api/V4/LedgerNames/ShowAll"
+        }
+    },
+    "options": {
+        "firstRow": {
+            "showSearch": false
+        },
+        "enabledSections": [
+            "vertical",
+            "table",
+            "footer"
+        ],
+        "vertical": {
+            "isFormDisabled": false,
+            "showSaveButton": true
+        }
+    },
+    "columnsConfig": [
+        {
+            "columnName": "LedgerName",
+            "cellConfig": {
+                "width": "150px"
+            },
+            "dataListSource": "ledgers.LedgerName",
+            "tableFooterDataListShow": true,
+            "uiClasses": {
+                "form": {
+                    "rowClass": "flex items-center space-x-4"
+                }
+            }
+        },
+        {
+            "columnName": "InvoiceDate",
+            "cellConfig": {
+                "width": "50px"
+            },
+            "uiClasses": {
+                "form": {
+                    "rowClass": "flex items-center space-x-4 w-1/2",
+                    "labelClass": "w-36 text-sm font-medium"
+                }
+            },
+            "isDate": true,
+            "defaultToday": true,
+            "isReadonly": false,
+            "autoFocus": false,
+            "isSearch": false
+        },
+        {
+            "columnName": "GstRegistrationType",
+            "cellConfig": {
+                "width": "50px"
+            },
+            "uiClasses": {
+                "form": {
+                    "rowClass": "flex items-center space-x-4 w-1/4",
+                    "labelClass": "w-36 text-sm font-medium"
+                }
+            }
+        },
+        {
+            "columnName": "PartyGSTIN",
+            "dataListFillName": "PartyGSTIN",
+            "cellConfig": {
+                "width": "50px"
+            },
+            "uiClasses": {
+                "form": {
+                    "rowClass": "flex items-center space-x-4 w-1/2"
+                }
+            }
+        }
+    ],
+    "uiClasses": {
+        "form": {
+            "formClass": "grid grid-cols-1 gap-x-8 gap-y-4 p-6 verticalForm"
+        }
+    },
+    "callbacks": {
+        "vertical": {
+            "onSuccess": "function"
+        }
+    }
+}

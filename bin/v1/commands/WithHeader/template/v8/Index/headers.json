@@ -1,0 +1,69 @@
+{
+    "uiClasses": {
+        "ulClass": "[&_svg]:size-6"
+    },
+    "title": {
+        "text": "Ledgers",
+        "htmlId": "htmlId"
+    },
+    "items": [
+        {
+            "text": "ShowAll",
+            "id": "ShowAllHtmlId",
+            "icon": [
+                "M4 6h16",
+                "M4 10h16",
+                "M4 14h16",
+                "M4 18h16"
+            ],
+            "uiClasses": {
+                "aClass": ""
+            },
+            "svgName": "home"
+        },
+        {
+            "text": "WithSerial",
+            "id": "WithSerialHtmlId",
+            "icon": [
+                "M8 6h12",
+                "M8 12h12",
+                "M8 18h12",
+                "M4 6h.01",
+                "M4 12h.01",
+                "M4 18h.01"
+            ],
+            "svgName": "serial"
+        },
+        {
+            "text": "WithSearch",
+            "id": "WithSearchHtmlId",
+            "icon": [
+                "M11 19a8 8 0 100-16 8 8 0 000 16z",
+                "M21 21l-4.35-4.35"
+            ],
+            "svgName": "search"
+        },
+        {
+            "text": "Transactions",
+            "id": "1",
+            "icon": [
+                "M6 2h9l5 5v15a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z",
+                "M14 2v6h6",
+                "M8 12h8",
+                "M8 16h8"
+            ],
+            "svgName": "currency",
+            "href": "../../BillsTable/index.html",
+            "href1": "../../Transactions/V7/Create/index.html"
+        },
+        {
+            "text": "ToTally",
+            "id": "toTallyId",
+            "icon": [
+                "M12 3v12",
+                "M8 11l4 4 4-4",
+                "M5 21h14"
+            ]
+        }
+    ]
+}

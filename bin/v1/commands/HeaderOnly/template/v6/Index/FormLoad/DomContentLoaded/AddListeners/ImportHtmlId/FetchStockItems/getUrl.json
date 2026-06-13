@@ -1,0 +1,4 @@
+{
+    "GetEndPoint2": "/FromTally/V2/StockItems/Transform",
+    "GetEndPoint": "/FromTally/V3/StockItems/Transform"
+}

@@ -1,0 +1,77 @@
+{
+    "containerId": "kSTableContainer",
+    "tableName": "",
+    "mode": "create",
+    "layout": {
+        "verticalPosition": "top",
+        "type": "table"
+    },
+    "endPoints": {
+        "create": "",
+        "update": "",
+        "delete": "",
+        "read": "",
+        "find": "",
+        "filter": "",
+        "dataLists": {}
+    },
+    "options": {
+        "enabledSections": [
+            "vertical",
+            "table",
+            "footer"
+        ]
+    },
+    "columnsConfig": [
+        {
+            "columnName": "Date",
+            "cellConfig": {
+                "width": "50px"
+            },
+            "isSearchable": false,
+            "dataListSource": "Dates.Date"
+        },
+        {
+            "columnName": "AccountName",
+            "cellConfig": {
+                "width": "100px"
+            },
+            "isSearchable": false,
+            "dataListSource": "AccountNames.AccountName"
+        },
+        {
+            "columnName": "Description",
+            "cellConfig": {
+                "width": "150px"
+            }
+        },
+        {
+            "columnName": "Credit",
+            "cellConfig": {
+                "width": "50px",
+                "rightAlign": true,
+                "showThousandsSeperator": true,
+                "tableFooter": {
+                    "showTotal": true,
+                    "showBalance": true,
+                    "evalBalance": "Credit-Debit",
+                    "showBalanceIfPositive": true
+                }
+            }
+        },
+        {
+            "columnName": "Debit",
+            "cellConfig": {
+                "width": "50px",
+                "rightAlign": true,
+                "showThousandsSeperator": true,
+                "tableFooter": {
+                    "showTotal": true,
+                    "showBalance": true,
+                    "evalBalance": "Debit-Credit",
+                    "showBalanceIfPositive": true
+                }
+            }
+        }
+    ]
+}

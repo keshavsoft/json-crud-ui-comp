@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json-crud-ui-table</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-100">
+
+    <section class="bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-6 py-20 text-center">
+
+            <div class="inline-flex items-center px-4 py-2 rounded-full bg-slate-800 text-slate-300">
+                CLI Project Generator
+            </div>
+
+            <h1 class="text-6xl font-bold mt-6">
+                json-crud-ui-table
+            </h1>
+
+            <p class="text-xl text-slate-300 mt-6 max-w-3xl mx-auto">
+                Generate ready-to-use CRUD UI pages, searchable tables,
+                serial-number grids and responsive menu layouts directly
+                from the command line.
+            </p>
+
+            <div class="mt-10">
+                <code class="bg-slate-800 px-6 py-3 rounded-xl text-lg">
+                    npx json-crud-ui-table withHeader Menu
+                </code>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 py-16">
+
+        <h2 class="text-4xl font-bold text-center">
+            Available Commands
+        </h2>
+
+        <div class="grid md:grid-cols-4 gap-6 mt-12">
+
+            <div class="bg-white rounded-2xl shadow p-6">
+                <h3 class="text-xl font-bold">showAll</h3>
+
+                <p class="text-gray-600 mt-3">
+                    Generate a clean CRUD table page.
+                </p>
+
+                <pre class="mt-4 text-sm bg-slate-100 p-3 rounded"><code>npx json-crud-ui-table
+showAll Masters</code></pre>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow p-6">
+                <h3 class="text-xl font-bold">showAllWithSerial</h3>
+
+                <p class="text-gray-600 mt-3">
+                    Adds serial-number support to tables.
+                </p>
+
+                <pre class="mt-4 text-sm bg-slate-100 p-3 rounded"><code>npx json-crud-ui-table
+showAllWithSerial Masters</code></pre>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow p-6">
+                <h3 class="text-xl font-bold">showAllWithSerialSearch</h3>
+
+                <p class="text-gray-600 mt-3">
+                    Search-enabled table template.
+                </p>
+
+                <pre class="mt-4 text-sm bg-slate-100 p-3 rounded"><code>npx json-crud-ui-table
+showAllWithSerialSearch Masters</code></pre>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow p-6">
+                <h3 class="text-xl font-bold">withHeader</h3>
+
+                <p class="text-gray-600 mt-3">
+                    Complete menu-based application layout.
+                </p>
+
+                <pre class="mt-4 text-sm bg-slate-100 p-3 rounded"><code>npx json-crud-ui-table
+withHeader Menu</code></pre>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="bg-white">
+
+        <div class="max-w-7xl mx-auto px-6 py-16">
+
+            <h2 class="text-4xl font-bold text-center">
+                Generated Features
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-8 mt-12">
+
+                <div class="border rounded-2xl p-6">
+                    <h3 class="font-bold text-xl">
+                        Responsive Header
+                    </h3>
+
+                    <p class="text-gray-600 mt-3">
+                        Mobile-friendly navigation menus powered by Tailwind.
+                    </p>
+                </div>
+
+                <div class="border rounded-2xl p-6">
+                    <h3 class="font-bold text-xl">
+                        CRUD Tables
+                    </h3>
+
+                    <p class="text-gray-600 mt-3">
+                        Ready-to-use table layouts for data management.
+                    </p>
+                </div>
+
+                <div class="border rounded-2xl p-6">
+                    <h3 class="font-bold text-xl">
+                        Modular Structure
+                    </h3>
+
+                    <p class="text-gray-600 mt-3">
+                        Organized folders with separate JavaScript entry points.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 py-16">
+
+        <div class="bg-slate-900 text-white rounded-3xl p-10">
+
+            <h2 class="text-3xl font-bold">
+                Generated Project Structure
+            </h2>
+
+            <pre class="mt-6 overflow-auto"><code>Menu/
+├── config.json
+├── index.html
+└── Index/
+    └── start.js</code></pre>
+
+        </div>
+
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 pb-20">
+
+        <div class="bg-white rounded-3xl shadow-lg p-10">
+
+            <h2 class="text-3xl font-bold text-center">
+                Perfect For
+            </h2>
+
+            <div class="grid md:grid-cols-4 gap-6 mt-10 text-center">
+
+                <div>
+                    <div class="text-4xl">📊</div>
+                    <h3 class="font-semibold mt-3">Admin Panels</h3>
+                </div>
+
+                <div>
+                    <div class="text-4xl">📋</div>
+                    <h3 class="font-semibold mt-3">Masters</h3>
+                </div>
+
+                <div>
+                    <div class="text-4xl">🔍</div>
+                    <h3 class="font-semibold mt-3">Search Screens</h3>
+                </div>
+
+                <div>
+                    <div class="text-4xl">⚡</div>
+                    <h3 class="font-semibold mt-3">Rapid Prototyping</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <footer class="bg-slate-900 text-center text-slate-400 py-6">
+        © 2026 KeshavSoft
+    </footer>
+
+</body>
+
+</html>

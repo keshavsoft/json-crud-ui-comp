@@ -1,0 +1,63 @@
+{
+    "containerId": "kSTableContainer",
+    "tableName": "",
+    "mode": "create",
+    "layout": {
+        "verticalPosition": "top",
+        "type": "table"
+    },
+    "endPoints": {
+        "create": "",
+        "update": "",
+        "delete": "",
+        "read": "/Api/V1/LedgerNames/ShowAll",
+        "find": "",
+        "filter": "",
+        "dataLists": {}
+    },
+    "options": {
+        "enabledSections": [
+            "vertical",
+            "table",
+            "footer"
+        ],
+        "table": {
+            "showSerial": true
+        }
+    },
+    "columnsConfig": [
+        {
+            "columnName": "LedgerName",
+            "title": "LedgerName",
+            "cellConfig": {
+                "width": "150px"
+            },
+            "isSearchable": false,
+            "dataListSource": "Dates.Date"
+        },
+        {
+            "columnName": "LedgerParentName",
+            "title": "Parent Name",
+            "cellConfig": {
+                "width": "100px"
+            },
+            "isSearchable": false,
+            "dataListSource": "AccountNames.AccountName"
+        },
+        {
+            "columnName": "GstRegistrationType",
+            "title": "Registration Type",
+            "cellConfig": {
+                "width": "100px"
+            }
+        },
+        {
+            "columnName": "PartyGSTIN",
+            "title": "GSTIN",
+            "cellConfig": {
+                "width": "100px",
+                "tableFooter": {}
+            }
+        }
+    ]
+}

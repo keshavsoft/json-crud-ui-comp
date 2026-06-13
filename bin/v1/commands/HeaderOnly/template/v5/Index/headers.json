@@ -1,0 +1,68 @@
+{
+    "uiClasses": {
+        "ulClass1": "[&_svg]:size-10",
+        "svgDivClass": "size-6"
+    },
+    "title": {
+        "text": "Ledgers",
+        "htmlId": "htmlId"
+    },
+    "items": [
+        {
+            "text": "Ledgers",
+            "id": "LedgersHtmlId",
+            "icon": [],
+            "uiClasses": {
+                "aClass": ""
+            },
+            "svgName": "home",
+            "href": "../../V7/LedgerNames/ShowAll/index.html"
+        },
+        {
+            "text": "StockItems",
+            "id": "StockItemsHtmlId",
+            "icon": [],
+            "svgName": "serial"
+        },
+        {
+            "text": "Transactions",
+            "id": "TransactionsHtmlId",
+            "icon": [
+                "M11 19a8 8 0 100-16 8 8 0 000 16z",
+                "M21 21l-4.35-4.35"
+            ],
+            "svgName": "search",
+            "href": "./Tally/V8/BillsTable/index.html"
+        },
+        {
+            "text": "FromTally",
+            "id": "ImportHtmlId",
+            "icon": [
+                "M12 3v12",
+                "M8 11l4 4 4-4",
+                "M5 21h14"
+            ],
+            "svgName": "download"
+        },
+        {
+            "text": "TallyUp",
+            "id": "tallyUpId",
+            "icon": [
+                "M12 3v12",
+                "M8 11l4 4 4-4",
+                "M5 21h14"
+            ],
+            "svgName": "wifi"
+        },
+        {
+            "text": "TallyDown",
+            "id": "tallyDownId",
+            "icon": [
+                "M12 3v12",
+                "M8 11l4 4 4-4",
+                "M5 21h14"
+            ],
+            "svgName": "exclamation"
+        }
+    ]
+}
