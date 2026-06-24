@@ -1,7 +1,7 @@
-import { load } from "../../index.js";
+import { load } from "../../../index.js";
 import path from "path";
 
-const commandToSend = "FromComponents";
+const commandToSend = "fromComponents";
 
 const startFunc = async (...a) =>
     (await load(commandToSend))(...a);

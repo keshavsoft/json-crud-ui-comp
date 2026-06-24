@@ -23,7 +23,10 @@ const headerOnly = async (...a) =>
 const tableComp = async (...a) =>
     (await load("tableComp"))(...a);
 
+const fromComponents = async (...a) =>
+    (await load("fromComponents"))(...a);
+
 export {
     load, showAll, showAllWithSerial, withHeader,
-    headerOnly, tableComp
+    headerOnly, tableComp, fromComponents
 };
