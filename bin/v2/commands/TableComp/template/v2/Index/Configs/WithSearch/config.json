@@ -1,0 +1,54 @@
+{
+    "containerId": "kSTableContainer",
+    "tableName": "Ledger Names",
+    "mode": "create",
+    "layout": {
+        "verticalPosition": "top",
+        "type": "table"
+    },
+    "endPoints": {
+        "create": "",
+        "update": "",
+        "delete": "",
+        "read": "/Api/V1/StockItems/ShowAll",
+        "find": "",
+        "filter": "",
+        "dataLists": {}
+    },
+    "options": {
+        "firstRow": {
+            "showSearch": true
+        },
+        "enabledSections": [
+            "vertical",
+            "table",
+            "footer"
+        ],
+        "table": {
+            "showSerial": true,
+            "showFooterRows": true,
+            "showBalance": true,
+            "showTotals": true
+        }
+    },
+    "columnsConfig": [
+        {
+            "columnName": "StockItemName",
+            "title": "StockItemName",
+            "cellConfig": {
+                "width": "150px"
+            },
+            "isSearchable": false,
+            "dataListSource": "Dates.Date"
+        },
+        {
+            "columnName": "StockBaseUnits",
+            "title": "StockBaseUnits",
+            "cellConfig": {
+                "width": "150px"
+            },
+            "isSearchable": false,
+            "dataListSource": "Dates.Date"
+        }
+    ]
+}

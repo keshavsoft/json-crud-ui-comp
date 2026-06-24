@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeshavSoft8</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- <link rel="stylesheet" href="./tailwind-3.css"> -->
+
+    <!-- Heroicons (SVG inline, no extra CDN needed) -->
+
+    <style>
+        tfoot tr {
+            background-color: #fff8dc;
+        }
+
+        tfoot tr:has(input:focus) {
+            background-color: #ffe082;
+        }
+
+        input:focus {
+            outline: none;
+            border: 2px solid #2563eb;
+            box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.3);
+        }
+
+        mark {
+            background-color: yellow;
+            color: black;
+        }
+
+        .active svg {
+            stroke: #3b82f6;
+            /* Example color */
+        }
+
+        .active span {
+            color: #3b82f6;
+            /* Example color */
+        }
+
+        .danger svg {
+            stroke: #c41d14;
+            /* Example color */
+        }
+
+        .danger span {
+            color: #c41d14;
+            /* Example color */
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 flex flex-col min-h-screen">
+    <main class="flex-grow">
+        <!-- NAVBAR -->
+
+        <div id="header"></div>
+
+        <!-- body -->
+        <section class="mx-auto px-3 py-6 
+                max-w-3xl 
+                lg:max-w-5xl 
+                xl:max-w-6xl">
+
+            <!-- Table container -->
+
+            <div id="kSTableContainer">
+            </div>
+
+            <div id="kSSubTableContainer">
+            </div>
+        </section>
+
+
+    </main>
+    <footer class="bg-gray-200 text-gray-700 text-center py-4">
+        <div class="max-w-6xl mx-auto px-4">
+            © 2026 KeshavSoft • Contact
+        </div>
+    </footer>
+
+    <!-- <script src="https://keshavsoft.github.io/KsJsTableAi/Public/kstable.js" type="module"></script> -->
+    <!-- <script src="https://keshavsoft.github.io/tailwind-header-dom/Public/v5/ksheader.js" type="module"></script> -->
+
+    <!-- <script src="https://keshavsoft.github.io/tailwind-table-dom/Public/v10/kstable.js" type="module"></script> -->
+
+    <!-- <script src="./script.js" type="module"></script> -->
+
+    <script type="module" src="./Index/start.js"></script>
+</body>
+
+</html>

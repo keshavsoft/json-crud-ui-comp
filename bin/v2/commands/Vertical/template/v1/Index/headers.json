@@ -1,0 +1,41 @@
+{
+    "uiClasses": {
+        "ulClass1": "[&_svg]:size-10",
+        "svgDivClass": "size-6"
+    },
+    "title": {
+        "text": "Ledgers",
+        "htmlId": "htmlId"
+    },
+    "items": [
+        {
+            "text": "Create",
+            "id": "CreateHtmlId",
+            "icon": [],
+            "uiClasses": {
+                "aClass": ""
+            },
+            "svgName": "home"
+        },
+        {
+            "text": "TallyUp",
+            "id": "tallyUpId",
+            "icon": [
+                "M12 3v12",
+                "M8 11l4 4 4-4",
+                "M5 21h14"
+            ],
+            "svgName": "wifi"
+        },
+        {
+            "text": "TallyDown",
+            "id": "tallyDownId",
+            "icon": [
+                "M12 3v12",
+                "M8 11l4 4 4-4",
+                "M5 21h14"
+            ],
+            "svgName": "exclamation"
+        }
+    ]
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KeshavSoft10.6</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- <link rel="stylesheet" href="./tailwind-3.css"> -->
+
+    <!-- Heroicons (SVG inline, no extra CDN needed) -->
+
+    <style>
+        tfoot tr {
+            background-color: #fff8dc;
+        }
+
+        tfoot tr:has(input:focus) {
+            background-color: #ffe082;
+        }
+
+        input:focus {
+            outline: none;
+            border: 2px solid #2563eb;
+            box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.3);
+        }
+
+        mark {
+            background-color: yellow;
+            color: black;
+        }
+
+        .active svg {
+            stroke: #3b82f6;
+            /* Example color */
+        }
+
+        .active span {
+            color: #3b82f6;
+            /* Example color */
+        }
+
+        .danger svg {
+            stroke: #c41d14;
+            /* Example color */
+        }
+
+        .danger span {
+            color: #c41d14;
+            /* Example color */
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 flex flex-col min-h-screen">
+    <main class="flex-grow">
+        <!-- NAVBAR -->
+
+        <div id="header"></div>
+
+        <!-- body -->
+        <section class="mx-auto px-3 py-6 
+                max-w-3xl 
+                lg:max-w-5xl 
+                xl:max-w-6xl">
+
+            <!-- Table container -->
+
+            <div id="kSTableContainer">
+            </div>
+
+            <div id="kSSubTableContainer">
+            </div>
+        </section>
+
+
+    </main>
+    <footer class="bg-gray-200 text-gray-700 text-center py-4">
+        <div class="max-w-6xl mx-auto px-4">
+            © 2026 KeshavSoft • Contact
+        </div>
+    </footer>
+
+    <!-- <script src="https://keshavsoft.github.io/KsJsTableAi/Public/kstable.js" type="module"></script> -->
+    <!-- <script src="https://keshavsoft.github.io/tailwind-header-dom/Public/v4.2/ksheader.js" type="module"></script> -->
+
+    <!-- <script src="https://keshavsoft.github.io/tailwind-table-dom/Public/v10/kstable.js" type="module"></script> -->
+<!-- 
+    <script>
+        class KsDataListInput extends HTMLElement {
+            connectedCallback() {
+                const label = this.getAttribute("label") || "";
+                const name = this.getAttribute("name") || "";
+                const list = this.getAttribute("list") || "";
+                const source = this.getAttribute("source") || "";
+
+                this.innerHTML = `
+            <div class="flex items-center space-x-4">
+                <label class="w-24 text-sm font-medium">${label}</label>
+                <input
+                    class="flex-1 border rounded px-3 py-2"
+                    name="${name}"
+                    list="${list}"
+                    data-data-list-fill-name="${name}"
+                    data-data-list-source="${source}">
+            </div>
+        `;
+            }
+        }
+
+        customElements.define("ks-datalist-input", KsDataListInput);
+
+        class KsButton extends HTMLElement {
+            connectedCallback() {
+                const text = this.getAttribute("text") || "Save";
+
+                this.innerHTML = `
+            <button class="w-full mt-2 px-4 py-1 bg-green-500 text-white rounded">
+                ${text}
+            </button>
+        `;
+
+                this.querySelector("button").addEventListener("click", (e) => {
+                    e.preventDefault(); // stop refresh
+
+                    const form = this.closest("form");
+
+                    const data = Object.fromEntries(
+                        [...form.querySelectorAll("input")]
+                            .map(input => [input.name, input.value])
+                    );
+
+                    console.log(data);
+                    this.onClick?.(data);
+                });
+            }
+        }
+
+        customElements.define("ks-button", KsButton);
+
+        class DateInput extends HTMLElement {
+            connectedCallback() {
+                this.innerHTML = `
+            <div class="flex items-center space-x-4 w-1/2">
+                <label class="w-36 text-sm font-medium">InvoiceDate</label>
+                <input type="date" name="InvoiceDate"
+                       class="flex-1 border rounded px-3 py-2">
+            </div>
+        `;
+            }
+        }
+
+        customElements.define("date-input", DateInput);
+
+        class KsInput extends HTMLElement {
+            connectedCallback() {
+                const label = this.getAttribute("label") || "";
+                const name = this.getAttribute("name") || "";
+                const type = this.getAttribute("type") || "text";
+
+                this.innerHTML = `
+            <div class="flex items-center space-x-4 w-1/2">
+                <label class="w-36 text-sm font-medium">${label}</label>
+                <input
+                    type="${type}"
+                    name="${name}"
+                    class="flex-1 border rounded px-3 py-2">
+            </div>
+        `;
+            }
+        }
+
+        customElements.define("ks-input", KsInput);
+    </script> -->
+
+    <script src="../../vertical/v1/entry.js" type="module"></script>
+
+    <script type="module" src="./Index/start.js"></script>
+</body>
+
+</html>

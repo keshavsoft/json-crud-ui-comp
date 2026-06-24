@@ -1,0 +1,292 @@
+{
+    "containerId": "kSTableContainer",
+    "tableName": "",
+    "mode": "create",
+    "layout": {
+        "verticalPosition": "top",
+        "type": "table"
+    },
+    "endPoints1": {
+        "create": "",
+        "update": "",
+        "delete": "",
+        "read": "/Api/V1/StockItems/ShowAll",
+        "find": "",
+        "filter": "",
+        "dataLists": {}
+    },
+    "options": {
+        "enabledSections": [
+            "vertical",
+            "table",
+            "footer"
+        ]
+    },
+    "columnsConfig1": [
+        {
+            "columnName": "StockItemName",
+            "title": "StockItemName",
+            "field": "StockItemName",
+            "cellConfig": {
+                "width": "150px"
+            },
+            "isConsider": true
+        },
+        {
+            "columnName": "StockGstApplicable",
+            "title": "StockGstApplicable",
+            "field": "StockGstApplicable",
+            "cellConfig": {
+                "width": "150px"
+            },
+            "isConsider": true
+        },
+        {
+            "columnName": "StockBaseUnits",
+            "title": "StockBaseUnits",
+            "field": "StockBaseUnits",
+            "cellConfig": {
+                "width": "150px"
+            },
+            "isConsider": true
+        },
+        {
+            "columnName": "sgstRate",
+            "title": "sgstRate",
+            "cellConfig": {
+                "width": "150px"
+            }
+        },
+        {
+            "columnName": "cgstRate",
+            "title": "cgstRate",
+            "cellConfig": {
+                "width": "150px"
+            }
+        },
+        {
+            "columnName": "TaxPer",
+            "title": "TaxPer",
+            "cellConfig": {
+                "width": "150px"
+            }
+        },
+        {
+            "columnName": "Uom",
+            "title": "Uom",
+            "cellConfig": {
+                "width": "150px"
+            }
+        },
+        {
+            "columnName": "StockItemReservedName",
+            "title": "StockItemReservedName",
+            "cellConfig": {
+                "width": "150px"
+            }
+        },
+        {
+            "columnName": "StockItemType",
+            "title": "StockItemType",
+            "cellConfig": {
+                "width": "150px"
+            }
+        },
+        {
+            "columnName": "StockParentName",
+            "title": "StockParentName",
+            "cellConfig": {
+                "width": "150px"
+            }
+        },
+        {
+            "columnName": "StockCategory",
+            "title": "StockCategory",
+            "cellConfig": {
+                "width": "150px"
+            }
+        },
+        {
+            "field": "pk",
+            "title": "pk",
+            "primary": true
+        }
+    ],
+    "callbacks": {
+        "table": {
+            "onDelete": "function",
+            "onReadFail": "function"
+        }
+    },
+    "columnsConfig2": [
+        {
+            "columnName": "LedgerName",
+            "title": "LedgerName",
+            "cellConfig": {
+                "width": "400px",
+                "tdClass": "px-4 py-2 border"
+            },
+            "dataListSource": "LedgerName.LedgerName",
+            "tableFooterDataListShow": true,
+            "uiClasses": {
+                "form": {
+                    "rowClass": "flex items-center space-x-4"
+                }
+            },
+            "allowOnChange": true,
+            "onChangeType": "onDataListChange"
+        },
+        {
+            "columnName": "InvoiceDate",
+            "title": "InvoiceDate",
+            "cellConfig": {
+                "width": "150px"
+            },
+            "uiClasses": {
+                "form": {
+                    "rowClass": "flex items-center space-x-4 w-1/2",
+                    "labelClass": "w-36 text-sm font-medium"
+                }
+            },
+            "isDate": true,
+            "defaultToday": true,
+            "isReadonly": false,
+            "autoFocus": false,
+            "isSearch": false,
+            "type": "date"
+        },
+        {
+            "columnName": "PartyGSTIN",
+            "title": "PartyGSTIN",
+            "dataListFillName": "PartyGSTIN",
+            "cellConfig": {
+                "width": "200px"
+            },
+            "uiClasses": {
+                "form": {
+                    "rowClass": "flex items-center space-x-4 w-1/2"
+                }
+            }
+        }
+    ],
+    "endPoints2": {
+        "create": "/Api/v1/BillsTable/insertGenPk",
+        "update": "",
+        "delete": "/Api/v1/BillsTable/del",
+        "read": "/Api/v1/BillsTable/ShowAll",
+        "find": "",
+        "filter": "",
+        "dataLists": {},
+        "dataListEndpoints": {
+            "LedgerName": "/Api/v1/LedgerNames/ShowAll"
+        }
+    },
+    "columnsConfig": [
+        {
+            "columnName": "ItemName",
+            "title": "ItemName",
+            "field": "ItemName",
+            "cellConfig": {
+                "width": "200px"
+            },
+            "isConsider": true,
+            "verticalConfig": {},
+            "tableConfig": {},
+            "isVisible": true,
+            "tableFooterDataListShow": true,
+            "dataListSource": "ItemName.StockItemName",
+            "allowOnChange": true,
+            "onChangeType": "onDataListChange"
+        },
+        {
+            "columnName": "RateInc",
+            "title": "RateInc",
+            "field": "RateInc",
+            "cellConfig": {
+                "width": "75px",
+                "rightAlign": true,
+                "uiClasses": {
+                    "table": {
+                        "tfoot": {
+                            "inputClass": "w-full border rounded px-2 py-1 text-xl"
+                        }
+                    }
+                }
+            },
+            "isConsider": true,
+            "verticalConfig": {},
+            "tableConfig": {},
+            "isVisible": true,
+            "tableFooterDataListShow": true,
+            "type": "number"
+        },
+        {
+            "columnName": "Qty",
+            "title": "Qty",
+            "field": "Qty",
+            "cellConfig": {
+                "width": "60px",
+                "rightAlign": true,
+                "uiClasses": {
+                    "table": {
+                        "tfoot": {
+                            "inputClass": "w-full border rounded px-2 py-1 text-xl"
+                        }
+                    }
+                }
+            },
+            "isConsider": true,
+            "verticalConfig": {},
+            "tableConfig": {},
+            "isVisible": true,
+            "tableFooterDataListShow": true,
+            "allowOnChange": true,
+            "onKeyDown": true,
+            "onKeyDownType": "Qty",
+            "type": "number"
+        },
+        {
+            "columnName": "Amount",
+            "title": "Amount",
+            "field": "Amount",
+            "cellConfig": {
+                "width": "75px",
+                "rightAlign": true,
+                "uiClasses": {
+                    "table": {
+                        "tfoot": {
+                            "inputClass": "w-full border rounded px-2 py-1 text-lg"
+                        }
+                    }
+                }
+            },
+            "isConsider": true,
+            "verticalConfig": {},
+            "tableConfig": {},
+            "isVisible": true,
+            "tableFooterDataListShow": true,
+            "allowOnChange": true,
+            "onKeyDown": true,
+            "onKeyDownType": "Amount",
+            "type": "number"
+        },
+        {
+            "field": "pk",
+            "title": "pk",
+            "primary": true,
+            "isVisible": false
+        }
+    ],
+    "endPoints": {
+        "create": "/Api/v1/ItemsTable/insertGenPk",
+        "update": "",
+        "delete": "/Api/v1/ItemsTable/del",
+        "read": "/Api/V1/ItemsTable/ShowAll",
+        "find": "",
+        "filter": "",
+        "dataLists": {},
+        "dataListEndpoints": {
+            "ItemName": "/Api/v1/StockItems/ShowAll"
+        }
+    }
+}
